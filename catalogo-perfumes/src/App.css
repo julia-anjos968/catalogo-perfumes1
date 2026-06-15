@@ -1,0 +1,479 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f7f3ef;
+  color:#2d2d2d;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:25px 8%;
+
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.logo{
+  font-size:2rem;
+  font-weight:700;
+  color:#9d7b49;
+}
+
+.menu{
+  display:flex;
+  gap:35px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#444;
+  font-weight:500;
+}
+
+.cart{
+  font-size:1.5rem;
+}
+
+/* HERO */
+
+.hero{
+  min-height:80vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:80px 8%;
+}
+
+.hero-text{
+  max-width:500px;
+}
+
+.tag{
+  color:#b88d4a;
+  font-weight:600;
+}
+
+.hero h1{
+  font-size:5rem;
+  line-height:1.1;
+  margin:15px 0;
+}
+
+.hero p{
+  color:#666;
+  line-height:1.8;
+}
+
+.hero button{
+  margin-top:25px;
+
+  padding:15px 35px;
+
+  border:none;
+  border-radius:30px;
+
+  background:#a98348;
+  color:white;
+
+  cursor:pointer;
+}
+
+.hero-image img{
+  width:400px;
+  height:500px;
+
+  object-fit:cover;
+
+  border-radius:30px;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+/* TITULOS */
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.section-title h2{
+  font-size:2.5rem;
+}
+
+/* COLEÇÃO */
+
+.colecao{
+  padding:80px 8%;
+}
+
+.cards-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:25px;
+}
+
+/* CARD */
+
+.card{
+  background:white;
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  text-decoration:none;
+  color:inherit;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+}
+
+.card-info{
+  padding:20px;
+}
+
+.card-info h3{
+  font-size:1.3rem;
+}
+
+.card-info p{
+  color:#777;
+  margin:8px 0;
+}
+
+.card-info span{
+  display:block;
+
+  color:#9d7b49;
+  font-weight:700;
+
+  margin-bottom:15px;
+}
+
+.card-info button{
+  width:100%;
+
+  padding:12px;
+
+  border:none;
+
+  background:#a98348;
+
+  color:white;
+
+  border-radius:10px;
+}
+
+/* MARCAS */
+
+.marcas{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.brands{
+  margin-top:30px;
+
+  display:flex;
+  justify-content:center;
+  gap:40px;
+
+  flex-wrap:wrap;
+}
+
+.brands span{
+  font-size:1.4rem;
+  color:#777;
+}
+
+/* SOBRE */
+
+.sobre{
+  padding:80px 8%;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:50px;
+}
+
+.sobre-text{
+  flex:1;
+}
+
+.sobre-text h2{
+  font-size:3rem;
+}
+
+.sobre-text p{
+  margin-top:20px;
+  line-height:1.8;
+}
+
+.sobre-imagem img{
+  width:350px;
+  border-radius:25px;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.newsletter h2{
+  font-size:2.5rem;
+}
+
+.newsletter-box{
+  margin-top:30px;
+}
+
+.newsletter-box input{
+  width:350px;
+  max-width:90%;
+
+  padding:15px;
+
+  border:1px solid #ddd;
+  border-radius:10px;
+}
+
+.newsletter-box button{
+  padding:15px 30px;
+
+  margin-left:10px;
+
+  border:none;
+
+  background:#a98348;
+  color:white;
+
+  border-radius:10px;
+}
+
+/* FOOTER */
+
+.footer{
+  text-align:center;
+
+  padding:40px;
+
+  background:white;
+}
+
+/* DETALHES */
+
+.detalhes-page{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:50px;
+}
+
+.detalhes-container{
+  max-width:1200px;
+  width:100%;
+
+  display:flex;
+  gap:60px;
+
+  background:white;
+
+  border-radius:30px;
+
+  padding:40px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.detalhes-imagem img{
+  width:450px;
+  border-radius:20px;
+}
+
+.detalhes-info{
+  flex:1;
+}
+
+.voltar{
+  text-decoration:none;
+  color:#888;
+}
+
+.categoria{
+  display:inline-block;
+
+  margin-top:20px;
+
+  color:#b88d4a;
+  font-weight:600;
+}
+
+.detalhes-info h1{
+  font-size:4rem;
+  margin-top:10px;
+}
+
+.detalhes-info h2{
+  color:#777;
+}
+
+.descricao{
+  margin:25px 0;
+  line-height:1.8;
+}
+
+.box-info{
+  background:#f8f5f0;
+  padding:20px;
+  border-radius:15px;
+}
+
+.preco{
+  font-size:2.5rem;
+  font-weight:700;
+  color:#a98348;
+
+  margin:30px 0;
+}
+
+.comprar{
+  padding:15px 40px;
+
+  border:none;
+
+  background:#a98348;
+  color:white;
+
+  border-radius:15px;
+
+  cursor:pointer;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+  .hero,
+  .sobre,
+  .detalhes-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:3rem;
+  }
+
+  .hero-image img,
+  .detalhes-imagem img{
+    width:100%;
+    max-width:400px;
+  }
+
+  .menu{
+    display:none;
+  }
+}
+
+.busca-section{
+  display:flex;
+  justify-content:center;
+  padding:20px 8%;
+}
+
+.busca-section input{
+  width:500px;
+  max-width:100%;
+
+  padding:15px 20px;
+
+  border:none;
+  border-radius:15px;
+
+  background:white;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+  font-size:1rem;
+}
+
+.sacola-page{
+  min-height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.sacola-page h1{
+  margin-bottom:30px;
+}
+
+.sacola-vazia{
+  background:white;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.item-sacola {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  background: white;
+
+  padding: 20px;
+
+  margin: 15px 0;
+
+  border-radius: 15px;
+}
+
+.item-sacola img {
+  width: 100px;
+  height: 120px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
